@@ -1,8 +1,8 @@
 @import 'variables.scss';
 
 header {
-  height: 30px;
-  margin: 0 40px 40px 0;
+  height: 35px;
+  margin: 0 30px 40px 0;
 
   .authentication {
     width: 100%;
@@ -17,8 +17,6 @@ header {
       font-weight: 300;
 
       a {
-        text-decoration: none;
-        color: $blue;
         font-weight: 400;
       }
     }
@@ -42,5 +40,5 @@ header {
         margin-left: 20px;
       }
     } // end of button
-  }
+  } // end of authentication
 } // end of header

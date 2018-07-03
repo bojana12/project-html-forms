@@ -1,0 +1,20 @@
+{
+  "name": "project-html-forms",
+  "version": "1.0.0",
+  "description": "Practicing html forms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-sass -w ./styles/ -o ./build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bojana12/project-html-forms.git"
+  },
+  "author": "Bojana Karakacev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bojana12/project-html-forms/issues"
+  },
+  "homepage": "https://github.com/bojana12/project-html-forms#readme"
+}

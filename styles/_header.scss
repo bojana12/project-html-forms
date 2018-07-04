@@ -41,4 +41,12 @@ header {
       }
     } // end of button
   } // end of authentication
+
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    display: block;
+  }
 } // end of header

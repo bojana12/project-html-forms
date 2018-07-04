@@ -89,6 +89,22 @@
         left: 24%;
         font-size: 18px;
         color: white;
+
+        @media screen and (min-width: 320px){
+          left: 19%;
+        }
+
+        @media screen and (min-width: 375px) {
+          left: 24%;
+        }
+
+        @media screen and (min-width: 414px){
+          left: 27%;
+        }
+
+        @media screen and (min-width: 768px) {
+          left: 24%;
+        }
       }
     } // end of create-button
 
@@ -101,5 +117,12 @@
       color:  #bbb;
     }
   } // end of sign-in-info
-} // end of sign-in-form
 
+  @media screen and (min-width: 320px){
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 380px;
+  }
+} // end of sign-in-form

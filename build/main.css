@@ -16,7 +16,7 @@ header {
   height: 100%; }
   header .authentication {
     height: 35px;
-    padding: 10px 30px 40px 0;
+    padding: 10px 30px 25px 0;
     font-family: Roboto, Arial, sans-serif; }
     header .authentication p {
       float: right;
@@ -58,7 +58,8 @@ header {
       margin-top: 10px; } }
   @media screen and (min-width: 768px) {
     .intuit-logo img {
-      width: 375px; } }
+      width: 375px;
+      margin: 0; } }
 
 body {
   background: #ECEEF1;
@@ -138,12 +139,6 @@ body {
         @media screen and (min-width: 375px) {
           .sign-in-form .sign-in-info .create-button i.material-icons {
             left: 24%; } }
-        @media screen and (min-width: 414px) {
-          .sign-in-form .sign-in-info .create-button i.material-icons {
-            left: 27%; } }
-        @media screen and (min-width: 768px) {
-          .sign-in-form .sign-in-info .create-button i.material-icons {
-            left: 24%; } }
     .sign-in-form .sign-in-info .license-agreement {
       margin: 40px 0 0 0;
       text-align: center;
@@ -153,7 +148,13 @@ body {
       color: #bbb; }
   @media screen and (min-width: 320px) {
     .sign-in-form {
-      width: 100%; } }
+      width: 100%;
+      border-right: 0;
+      border-left: 0; } }
+  @media screen and (min-width: 414px) {
+    .sign-in-form {
+      width: 90%;
+      border: 1px solid #C1C5C8; } }
   @media screen and (min-width: 768px) {
     .sign-in-form {
       width: 380px; } }
@@ -174,3 +175,10 @@ footer {
     footer ul li {
       display: inline-block;
       margin-left: 5px; }
+  @media screen and (min-width: 414px) {
+    footer {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 768px) {
+    footer {
+      width: 100%; } }

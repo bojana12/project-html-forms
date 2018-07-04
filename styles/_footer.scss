@@ -22,4 +22,13 @@ footer {
       margin-left: 5px;
     }
   } // end of ul
-}
+
+  @media screen and (min-width: 414px){
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+} // end of footer

@@ -1,8 +1,4 @@
 body {
   background: #ECEEF1;
   font-family: $primary-ff;
-
-  @media screen and (min-width: 2560px) {
-    overflow: hidden;
-  }
 }

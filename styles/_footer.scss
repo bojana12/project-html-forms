@@ -8,6 +8,15 @@ footer {
   font-size: 12px;
   color: #505050;
 
+  @media screen and (min-width: 414px){
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
+
   p {
     margin: 0 0 10px 0;
   }
@@ -22,13 +31,4 @@ footer {
       margin-left: 5px;
     }
   } // end of ul
-
-  @media screen and (min-width: 414px){
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 100%;
-  }
 } // end of footer

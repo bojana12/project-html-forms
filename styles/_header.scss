@@ -4,6 +4,14 @@ header {
   width: 100%;
   height: 100%;
 
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+
   .authentication {
     height: 35px;
     padding: 10px 30px 25px 0;
@@ -41,12 +49,4 @@ header {
       }
     } // end of button
   } // end of authentication
-
-  @media screen and (min-width: 320px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px){
-    display: block;
-  }
 } // end of header

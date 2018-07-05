@@ -7,13 +7,15 @@ body {
   text-decoration: none;
   color: #0077C5; }
 
-.container {
-  width: 100%;
-  height: 100%; }
-
 header {
   width: 100%;
   height: 100%; }
+  @media screen and (min-width: 320px) {
+    header {
+      display: none; } }
+  @media screen and (min-width: 768px) {
+    header {
+      display: block; } }
   header .authentication {
     height: 35px;
     padding: 10px 30px 25px 0;
@@ -40,17 +42,10 @@ header {
         color: white; }
       header .authentication button .sign-in-button {
         margin-left: 20px; }
-  @media screen and (min-width: 320px) {
-    header {
-      display: none; } }
-  @media screen and (min-width: 768px) {
-    header {
-      display: block; } }
 
 .intuit-logo {
   width: 100%;
   height: 100%;
-  margin: 0 auto;
   text-align: center; }
   @media screen and (min-width: 320px) {
     .intuit-logo img {
@@ -65,59 +60,73 @@ body {
   background: #ECEEF1;
   font-family: Roboto, Arial, sans-serif; }
 
-.sign-in-form {
+.sign-in-form-container {
   width: 375px;
   height: 100%;
   margin: 10px auto;
   padding: 30px 0;
   background: white;
   border: 1px solid #C1C5C8; }
-  .sign-in-form .text {
+  @media screen and (min-width: 320px) {
+    .sign-in-form-container {
+      width: 100%;
+      border-right: 0;
+      border-left: 0; } }
+  @media screen and (min-width: 414px) {
+    .sign-in-form-container {
+      width: 90%;
+      border: 1px solid #C1C5C8; } }
+  @media screen and (min-width: 768px) {
+    .sign-in-form-container {
+      width: 380px; } }
+  .sign-in-form-container .text {
     margin: 0;
     text-align: center;
     font-weight: 400;
     font-size: 24px; }
-  .sign-in-form .account {
+  .sign-in-form-container .account {
     margin: 5px 0 0 0;
     text-align: center;
     font-weight: 300;
     font-size: 14px; }
-    .sign-in-form .account a {
+    .sign-in-form-container .account a {
       font-size: 12px;
       font-weight: 400; }
-  .sign-in-form form {
+  .sign-in-form-container form {
     text-align: left;
     font-size: 14px;
     font-weight: 300; }
-  .sign-in-form .sign-in-info {
+  .sign-in-form-container .sign-in-form {
     width: 80%;
     margin: 0 auto;
     padding: 0;
     border: none; }
-    .sign-in-form .sign-in-info label {
+    .sign-in-form-container .sign-in-form label {
       position: relative;
       display: block;
-      margin-top: 30px; }
-      .sign-in-form .sign-in-info label .standard-call {
-        font-size: 10px; }
-      .sign-in-form .sign-in-info label i {
-        position: absolute;
-        right: 4%;
-        bottom: 11%;
-        font-size: 18px;
-        color: #C1C5C8; }
-    .sign-in-form .sign-in-info input {
+      margin: 30px 0 10px 0;
+      font-size: 14px; }
+    .sign-in-form-container .sign-in-form input {
       position: relative;
       width: 94%;
       height: 34px;
-      margin-top: 10px;
       padding: 0 8px;
       border: 1px solid #C1C5C8;
       border-radius: 3px;
       font-size: 13px; }
-      .sign-in-form .sign-in-info input:focus {
+      .sign-in-form-container .sign-in-form input:focus {
         border: 1px solid #52ABEC; }
-    .sign-in-form .sign-in-info .create-button {
+    .sign-in-form-container .sign-in-form .standard-call {
+      font-size: 10px; }
+    .sign-in-form-container .sign-in-form .unlock-icon {
+      position: relative; }
+      .sign-in-form-container .sign-in-form .unlock-icon i.fa-unlock {
+        position: absolute;
+        right: 4%;
+        bottom: 25%;
+        font-size: 18px;
+        color: #C1C5C8; }
+    .sign-in-form-container .sign-in-form .create-button {
       position: relative;
       width: 100%;
       height: 45px;
@@ -128,36 +137,24 @@ body {
       font-size: 16px;
       background: #0077C5;
       color: white; }
-      .sign-in-form .sign-in-info .create-button i.material-icons {
+      .sign-in-form-container .sign-in-form .create-button i.material-icons {
         position: absolute;
         left: 24%;
         font-size: 18px;
         color: white; }
         @media screen and (min-width: 320px) {
-          .sign-in-form .sign-in-info .create-button i.material-icons {
+          .sign-in-form-container .sign-in-form .create-button i.material-icons {
             left: 19%; } }
         @media screen and (min-width: 375px) {
-          .sign-in-form .sign-in-info .create-button i.material-icons {
+          .sign-in-form-container .sign-in-form .create-button i.material-icons {
             left: 24%; } }
-    .sign-in-form .sign-in-info .license-agreement {
+    .sign-in-form-container .sign-in-form .license-agreement {
       margin: 40px 0 0 0;
       text-align: center;
       line-height: 2;
       font-weight: 400;
       font-size: 12px;
       color: #bbb; }
-  @media screen and (min-width: 320px) {
-    .sign-in-form {
-      width: 100%;
-      border-right: 0;
-      border-left: 0; } }
-  @media screen and (min-width: 414px) {
-    .sign-in-form {
-      width: 90%;
-      border: 1px solid #C1C5C8; } }
-  @media screen and (min-width: 768px) {
-    .sign-in-form {
-      width: 380px; } }
 
 footer {
   width: 100%;
@@ -166,6 +163,13 @@ footer {
   line-height: 1.5;
   font-size: 12px;
   color: #505050; }
+  @media screen and (min-width: 414px) {
+    footer {
+      width: 90%;
+      margin: 0 auto; } }
+  @media screen and (min-width: 768px) {
+    footer {
+      width: 100%; } }
   footer p {
     margin: 0 0 10px 0; }
   footer ul {
@@ -175,10 +179,3 @@ footer {
     footer ul li {
       display: inline-block;
       margin-left: 5px; }
-  @media screen and (min-width: 414px) {
-    footer {
-      width: 90%;
-      margin: 0 auto; } }
-  @media screen and (min-width: 768px) {
-    footer {
-      width: 100%; } }

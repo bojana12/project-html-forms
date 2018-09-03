@@ -18,7 +18,7 @@ header {
       display: block; } }
   header .authentication {
     height: 35px;
-    padding: 10px 30px 20px 0;
+    padding: 10px 30px 10px 0;
     font-family: Roboto, Arial, sans-serif; }
     header .authentication p {
       float: right;
@@ -159,7 +159,7 @@ body {
 footer {
   width: 100%;
   text-align: center;
-  padding: 20px 0;
+  padding: 20px 0 5px 0;
   line-height: 1.5;
   font-size: 12px;
   color: #505050; }
